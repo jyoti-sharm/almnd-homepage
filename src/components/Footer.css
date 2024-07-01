@@ -1,0 +1,137 @@
+.footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.footer-container {
+    /* max-width: 1200px; */
+    margin: 0 auto;
+}
+
+.footer-sections {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.section {
+    text-align: left;
+    padding: 0 10px;
+}
+
+.section-logo-newsletter {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.footerLogo {
+    height: 50px;
+    margin-bottom: 20px;
+    background-color: white;
+    padding: 10px;
+}
+
+.newsletter {
+    margin: 2rem 0;
+    text-align: left;
+}
+
+.newsletter span {
+    display: block;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.newsletter-input-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.newsletter-input-wrapper input[type="email"] {
+    padding: 0.75rem 1.5rem 0.75rem 0.75rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    width: 300px;
+}
+
+.newsletter-input-wrapper button {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 90%;
+    padding: 0 1rem;
+    font-size: 1rem;
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 2px;
+    margin-right: 2px;
+}
+
+.newsletter-input-wrapper button:hover {
+    background-color: #1C86EE;
+}
+
+.section-policies {
+    flex: 2;
+}
+
+.section-socials {
+    flex: 2;
+}
+
+.section-contact {
+    flex: 3;
+}
+
+.section h4 {
+    margin-bottom: 10px;
+}
+
+.section p {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    color: #ccc;
+    margin-top: 20px;
+    border-top: 2px solid gray;
+    padding-top: 20px;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+@media (max-width: 768px) {
+    .footer-sections {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+        align-items: center;
+    }
+
+    .newsletter-input-wrapper {
+        flex-direction: column;
+      }
+    
+      .newsletter input,
+      .newsletter button {
+        width: 100%;
+        margin: 5px 0;
+      }
+}
